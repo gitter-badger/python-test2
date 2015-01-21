@@ -98,4 +98,4 @@ while(operazione==0):
     operazione=input("\nPremi 0 per eseguire nuovamente il programma o qualunque altro numero per uscire\n: ")
     operazione=int(operazione)
 
-print("Arrivederci Mondo!")
+print("Arrivederci Mondo")
