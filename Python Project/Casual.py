@@ -15,7 +15,7 @@ def NellIntervallo(lista, limiteinferiore, limitesuperiore):
             print(Conteggio)
 
 
-def AmpiezaIntervallo(NumIntervalli):
+def AmpiezzaIntervallo(NumIntervalli):
     AmpiezzaIntervallo=1.0/NumIntervalli
     for i in range(NumIntervalli):
         LimiteInferiore=i*AmpiezzaIntervallo
@@ -23,19 +23,22 @@ def AmpiezaIntervallo(NumIntervalli):
         print("da", LimiteInferiore, "a",LimiteSuperiore)
 
 
+lista=[1,2,3,4,5,6,7,8]
 
 
+NumIntervalli = 8 
+Conteggio = [0] * NumIntervalli 
+for i in lista: 
+  Indice = int(i * NumIntervalli) 
+  Conteggio[Indice] = Conteggio[Indice] + 1
 
-lista=[0.6406401169903435, 0.660248294842418, 0.00033887020724687744, 0.12881911899611587]
 
-
-
-NumIntervalli=8
-Conteggio=[0]*NumIntervalli
-AmpiezzaIntervallo=1.0/NumIntervalli
-for i in range(NumIntervalli):
-    LimiteInferiore=i*AmpiezzaIntervallo
-    LimiteSuperiore=LimiteInferiore+AmpiezzaIntervallo
-    Conteggio[i]=NellIntervallo(lista, LimiteInferiore, LimiteSuperiore)
-    print(Conteggio)
-
+NumIntervalli = 8 
+Conteggio = [0] * NumIntervalli 
+AmpiezzaIntervallo = 1.0 / NumIntervalli 
+for i in range(NumIntervalli): 
+  LimiteInferiore = i * AmpiezzaIntervallo 
+  LimiteSuperiore = LimiteInferiore + AmpiezzaIntervallo 
+  Conteggio[i] = NellIntervallo(Lista, LimiteInferiore, \ 
+                 LimiteSuperiore) 
+print Conteggi
