@@ -25,14 +25,7 @@ def AmpiezzaIntervallo(NumIntervalli):
         print("da", LimiteInferiore, "a",LimiteSuperiore)
 
 
-lista=[1,2,3,4,5,6,7,8]
 
-
-NumIntervalli = 8 
-Conteggio = [0] * NumIntervalli 
-for i in lista: 
-  Indice = int(i * NumIntervalli) 
-  Conteggio[Indice] = Conteggio[Indice] + 1
 
 <<<<<<< HEAD
 
@@ -52,12 +45,3 @@ def CreaLista(Lungh):
 =======
 >>>>>>> origin/master
 
-NumIntervalli = 8 
-Conteggio = [0] * NumIntervalli 
-AmpiezzaIntervallo = 1.0 / NumIntervalli 
-for i in range(NumIntervalli): 
-  LimiteInferiore = i * AmpiezzaIntervallo 
-  LimiteSuperiore = LimiteInferiore + AmpiezzaIntervallo 
-  Conteggio[i] = NellIntervallo(Lista, LimiteInferiore, \ 
-                 LimiteSuperiore) 
-print Conteggi
