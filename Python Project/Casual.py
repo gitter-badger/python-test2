@@ -13,8 +13,7 @@ def NellIntervallo(lista, limiteinferiore, limitesuperiore):
             Conteggio=Conteggio+1
             print(Conteggio)
 
-<<<<<<< HEAD
-=======
+
 
 >>>>>>> origin/master
 def AmpiezzaIntervallo(NumIntervalli):
@@ -23,11 +22,6 @@ def AmpiezzaIntervallo(NumIntervalli):
         LimiteInferiore=i*AmpiezzaIntervallo
         LimiteSuperiore=LimiteInferiore+AmpiezzaIntervallo #aggiungo al limiteinferiore una cifra fissa che corrisponde ad ampiezzaintervallo
         print("da", LimiteInferiore, "a",LimiteSuperiore)
-
-
-
-
-<<<<<<< HEAD
 
 #Lista per numeri Casuali
 def CreaLista(Lungh):
@@ -42,6 +36,4 @@ def CreaLista(Lungh):
 
 
 
-=======
->>>>>>> origin/master
 

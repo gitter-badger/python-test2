@@ -1,4 +1,14 @@
 #Angolo delle funzioni
+def CreaLista(Lungh):
+    s=[0]*Lungh
+    for i in range(Lungh):
+        import random
+        s[i]=random.random()
+        if(s[Lungh-1]!=0):
+            print(s)
+        else:
+            print("Errore di digitazione")
+
 def fib(n):
     a, b = 0, 1
     while a < n:
@@ -27,11 +37,12 @@ def CalcSconto(costo, percentuale):
     risultato=costo/100*percentuale
     print(risultato)
 
-def Divisibile(x, y):
-    if(x%y==0):
-        print ("è divisibile") #x, "è divisibile per" ,y
-    else:
-        return ("non è divisibile") #x, "non è divisibile per", y
+def Divisibile(n, grandezza):
+    i=1
+    while(i<=grandezza):
+        if(n%i==0):
+            print(n, "è divisibile per", i)
+        i=i+1
 
 #Calcolatrice
 operazione=0
@@ -42,16 +53,16 @@ while(operazione==0):
     #Chiedo il primo numero
     testo=input("immetti un numero: ")
     #trasformo il tetso inserito in un numero
-    primo=float(testo)
+    primo=int(testo)
     #Chiedo il secondo numero
     testo=input("Immetti un altro numero: ")
     #Trasformo il testo inserito in un numero intero
-    secondo=float(testo)
+    secondo=int(testo)
     
     #Continuo a chiedere l'operazione finche non ne viene indicata una valida
     while(operazione==0):
         
-        operazione=input("Scegli un operazione: \n1. Somma\n2. Sottrazione\n3. Moltiplicazione\n4. Divisione\n5. Fattoriale\n6. CalcSconto\n7. Divisibile\n8. NumeroPari\n9. RadiceQuadrata\n10. Potenza\n11. Fibonacci\n12. : ")
+        operazione=input("Scegli un operazione: \n1. Somma\n2. Sottrazione\n3. Moltiplicazione\n4. Divisione\n5. Fattoriale\n6. CalcSconto\n7. Divisibile\n8. NumeroPari\n9. RadiceQuadrata\n10. Potenza\n11. Fibonacci\n12. CreaLista\n13 : ")
         operazione=int(operazione)
         #a seconda del ciclo selezionato saranno eseguite le istruzioni scelte
         if(operazione==1):
@@ -93,7 +104,9 @@ while(operazione==0):
         elif(operazione==11 and secondo==0):
             risultato=fib(primo)
             print(risultato)
-            
+        elif(operazione==13 and secondo==0):
+            risultato=CreaLista(primo)
+            print(risultato)
     #Rinizio del ciclo while
     operazione=input("\nPremi 0 per eseguire nuovamente il programma o qualunque altro numero per uscire\n: ")
     operazione=int(operazione)
